@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+
+<style>
+
+
+*{
+    box-sizing: border-box;
+}
+
+.button1{
+    text-align: right;
+}
+.button2{
+    text-align:left;
+}
+.row{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+   
+
+.column{
+    justify-content: center;
+}
+
+.column img{
+    width: 200px;
+    height: 200px;
+}
+
+
+@media only screen and (max-width:768px){
+
+.column img{
+
+width: 90px;
+height: 200px;
+}
+
+.row{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.column{
+  justify-content: center;
+  
+}
+
+}
+
+
+</style>
+<script>
+    const db = document.querySelector("a");
+    
+    db.addEventListener("dblclick", (e) => {
+      db.classList.toggle("enlarge");
+    });
+    </script>
+
+
+</head>
+<body style="background-color: black;">
+
+    <h1 style="text-align:center; color:  blue;">Photo Gallery App</h1>
+    <hr>
+
+
+    <div class="button1">
+        <input type="button" onclick="location='pagethree.html'" value="Tap next page">
+    </div>
+
+    
+     
+    <div class="button2">
+        <input type="button" onclick="location='pageone.html'" value="Tap previous page">
+    </div>
+
+
+    <div class="responsive">
+
+        <div class="row">
+            <div class="column">
+                <a href="picture25.jpg">  <img src="Picture25.jpg"></a>
+                <a href="picture26.jpg">  <img src="picture26.jpg"></a>
+                <a href="picture27.jpg"> <img src="picture27.jpg" ></a>
+                <a href="picture28.jpg"> <img src="picture28.jpg" ></a>
+                 </div>
+            
+                 <div class="column">
+                    <a href="picture29.jpg">   <img src="picture29.jpg"></a>
+                    <a href="picture30.jpg">  <img src="picture30.jpg" ></a>
+                    <a href="picture31.jpg">  <img src="picture31.jpg" ></a>
+                    <a href="picture32.jpg">   <img src="picture32.jpg"></a>
+                 </div>
+
+                   
+                 <div class="column">
+                    <a href="picture33.jpg">   <img src="picture33.jpg"></a>
+                    <a href="picture34.jpg">   <img src="picture34.jpg"></a>
+                    <a href="picture35.jpg">  <img src="picture35.jpg" ></a>
+                    <a href="picture36.jpg">  <img src="picture36.jpg" ></a>
+                   </div>
+
+                   
+                 <div class="column">
+                    <a href="picture37.jpg"> <img src="picture37.jpg" ></a>
+                    <a href="picture38.jpg">  <img src="picture38.jpg" ></a>
+                    <a href="picture39.jpg">  <img src="picture39.jpg" ></a>
+                    <a href="picture40.jpg">  <img src="picture40.jpg" ></a>
+                   </div>
+
+                   
+                 <div class="column">
+                    <a href="picture41.jpg">  <img src="picture41.jpg" ></a>
+                    <a href="picture42.jpg"> <img src="picture42.jpg" ></a>
+                    <a href="picture43.jpg"> <img src="picture43.jpg" ></a>
+                    <a href="picture44.jpg">  <img src="picture44.jpg" ></a>
+                   </div>
+
+                   <div class="column">
+                    <a href="picture45.jpg">  <img src="picture45.jpg"></a>
+                    <a href="picture46.jpg">  <img src="picture46.jpg"></a>
+                    <a href="picture47.jpg">  <img src="picture47.jpg"></a>
+                    <a href="picture48.jpg">  <img src="picture48.jpg"> </a>
+                   </div>
+               
+        </div>
+
+    </div>
+    
+
+    
+</body>
+</html>
